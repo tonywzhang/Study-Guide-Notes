@@ -28,4 +28,4 @@ For example, if we have a tree with N nodes, we must have N-1 number of edges. W
 
 This representation is considered an adjacency matrix representation.
 
-If there are edges for each vertice towards every other vertice in the tree, it would expect there to be an estimated n^2 number of edges. An adjacency matrix would be a huge waste of space assuming n is an exceedingly large number.
+If there are edges for each vertex towards every other vertex in the tree, it would expect there to be an estimated n^2 number of edges. An adjacency matrix would be a huge waste of space assuming n is an exceedingly large number.
