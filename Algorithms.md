@@ -20,8 +20,12 @@ For example, if we have a tree with N nodes, we must have N-1 number of edges. W
   * If we store a graph in memory as nodes with pointers to one another, the space complexity is O(n) depending on the total number of nodes we have.
   * The number of pointers required is O(n^2)
 
+## Adjacency Matrix
 
+* We can represent our edges as a V x V array, where V denotes the number of vertices.
+* We can label vertices based on each index.
+* We denote 1s in columns/rows where the two nodes labeled have a connection. 0 denotes no connection.
 
-## Stateless
+This representation is considered an adjacency matrix representation.
 
-Stateless does not mean that servers and clients do not have state, it simply means that they do not need to keep track of each other’s state. When a client is not interacting with the server, the server has no idea of its existence. The server also does not keep a record of past requests. Each request is treated as a standalone.
+If there are edges for each vertice towards every other vertice in the tree, it would expect there to be an estimated n^2 number of edges. An adjacency matrix would be a huge waste of space assuming n is an exceedingly large number.
