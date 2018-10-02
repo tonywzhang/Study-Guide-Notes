@@ -11,5 +11,16 @@ For example, if we have a tree with N nodes, we must have N-1 number of edges. W
   * G = (V,E) where V is a set of nodes, also called vertices
   * E is a set of edges, also called links.
 
+
 * What are the specific attributes that graphs can have, and how do we talk about them?
-  *
+  * Graphs may have directed or undirected edges. Directed graphs have one directional edges, whereas undirected graphs have bi-directional edges.
+
+
+* What are some ways we might store a graph in memory? What space/time complexity problems might we face?
+  * If we store a graph in memory as nodes with pointers to one another, the space complexity is O(n) depending on the total number of nodes we have.
+  * The number of pointers required is O(n^2)
+
+
+
+* REST (Representation State Transfer) is a term we have thrown around a lot in the course.
+  * It is a set of design principles for making network communication more scalable and flexible.
