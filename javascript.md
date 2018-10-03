@@ -24,3 +24,11 @@ typeof Symbol('Hi')   // symbol (New ES6)
 Undefined is the absence of a definition. It is used as the default value for uninitialized variables, function arguments that were not provided and missing properties of objects. Functions return undefined when nothing has been explicitly returned.
 
 Null is the absence of a value. It is an assignment value that can be assigned to a variable as a representation of ‘no-value’.
+
+### Falsey Values
+
+```
+Falsy values: "", 0, null, undefined, NaN, false.
+
+Anything not explicitly on the falsy list is truthy — boolean coerced to true.
+```
