@@ -173,3 +173,24 @@ let and const are not hoisted. var is hoisted
   console.log(i);  // 10
 }
 ```
+
+### Function Expression vs Function Declaration
+
+#### Function Expression
+
+A Function Expression is created when the execution reaches it and is usable from then on — it is not hoisted.
+
+```
+var sum = function(a, b) {
+  return a + b;
+}
+```
+
+#### Function Declaration
+A Function Declaration can be called both before and after it was defined — it is hoisted.
+
+```
+function sum(a, b) {
+  return a + b;
+}
+```
