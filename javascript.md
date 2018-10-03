@@ -288,3 +288,13 @@ To clear things up, lets keep the following in mind:
 Context is most often determined by how a function is invoked. It always refers to the value of this in a particular part of your code.
 
 Scope refers to the visibility of variables.
+
+### Function calls: call, apply and bind
+
+All of these three methods are used to attach this into function and the difference is in the function invocation.
+
+.call() invokes the function immediately and requires you to pass in arguments as a list (one by one).
+
+.apply() invokes the function immediately and allows you to pass in arguments as an array.
+
+.call() and .apply() are mostly equivalent and are used to borrow a method from an object. Choosing which one to use depends on which one is easier to pass the arguments in. Just decide whether it’s easier to pass in an array or a comma separated list of arguments.
