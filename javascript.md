@@ -131,3 +131,45 @@ outer();
 ```
 
 You may think of Scopes as a series of doors decreasing in size (from biggest to smallest). A short person that fits through the smallest door — innermost scope — also fits through any bigger doors — outer scopes.
+
+### Hoisting
+
+The behavior of “moving” var and function declarations to the top of their respective scopes during the compilation phase is called hoisting.
+
+Function declarations are completely hoisted. This means that a declared function can be called before it is defined.
+
+```
+console.log(toSquare(3));  // 9
+
+function toSquare(n){
+  return n*n;
+}
+```
+
+let and const are not hoisted. var is hoisted
+
+```
+{  /* Original code */
+  console.log(i);  // undefined
+  var i = 10
+  console.log(i);  // 10
+}
+
+{  /* Compilation phase */
+  var i;
+  console.log(i);  // undefined
+  i = 10
+  console.log(i);  // 10
+}
+// ES6 let & const
+{
+  console.log(i);  // ReferenceError: i is not defined
+  const i = 10
+  console.log(i);  // 10
+}
+{
+  console.log(i);  // ReferenceError: i is not defined
+  let i = 10
+  console.log(i);  // 10
+}
+```
