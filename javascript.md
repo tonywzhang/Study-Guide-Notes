@@ -254,3 +254,7 @@ console.log(sayHiToJon())   // 'Hi Jon!'
 Refers to variables in outer scope.
 
 One of the main benefits of closures is that it allows data encapsulation. This refers to the idea that some data should not be directly exposed. The following example illustrates that.
+
+### Immediate Invoked Function Expression (IIFE)
+
+An IIFE is a function expression that is called immediately after you define it. It is usually used when you want to create a new variable scope.
