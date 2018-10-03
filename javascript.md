@@ -250,3 +250,7 @@ var sayHiToJon = sayHi('Jon');
 console.log(sayHiToJon)     // ƒ() { console.log(message) }
 console.log(sayHiToJon())   // 'Hi Jon!'
 ```
+
+Refers to variables in outer scope.
+
+One of the main benefits of closures is that it allows data encapsulation. This refers to the idea that some data should not be directly exposed. The following example illustrates that.
