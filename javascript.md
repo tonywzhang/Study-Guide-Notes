@@ -194,3 +194,42 @@ function sum(a, b) {
   return a + b;
 }
 ```
+
+### Variables: var, let and const
+
+Before ES6, it was only possible to declare a variable using var. Variables and functions declared inside another function cannot be accessed by any of the enclosing scopes — they are function-scoped.
+
+Variables declared inside a block-scope, such as if statements and for loops, can be accessed from outside of the opening and closing curly braces of the block.
+
+Note: An undeclared variable — assignment without var, let or const — creates a var variable in global scope.
+
+```
+function greeting() {
+  console.log(s) // undefined
+  if(true) {
+    var s = 'Hi';
+    undeclaredVar = 'I am automatically created in global scope';
+  }
+  console.log(s) // 'Hi'
+}
+console.log(s);  // Error — ReferenceError: s is not defined
+greeting();
+console.log(undeclaredVar) // 'I am automatically created in global scope'
+```
+
+ES6 let and const are new. They are not hoisted and block-scoped alternatives for variable declaration. This means that a pair of curly braces define a scope in which variables declared with either let or const are confined in.
+
+```
+let g1 = 'global 1'
+let g2 = 'global 2'
+{   /* Creating a new block scope */
+  g1 = 'new global 1'
+  let g2 = 'local global 2'
+  console.log(g1)   // 'new global 1'
+  console.log(g2)   // 'local global 2'
+  console.log(g3)   // ReferenceError: g3 is not defined
+  let g3 = 'I am not hoisted';
+}
+console.log(g1)    // 'new global 1'
+console.log(g2)    // 'global 2'
+```
