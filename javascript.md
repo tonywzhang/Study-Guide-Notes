@@ -104,4 +104,30 @@ console.log(c === d);  // true
 console.log(c === e);  // false
 ```
 
-###
+### Scope
+
+Scope refers to the execution context. It defines the accessibility of variables and functions in the code.
+
+Global Scope is the outermost scope. Variables declared outside a function are in the global scope and can be accessed in any other scope. In a browser, the window object is the global scope.
+
+Local Scope is a scope nested inside another function scope. Variables declared in a local scope are accessible within this scope as well as in any inner scopes.
+
+```
+function outer() {
+  let a = 1;
+  function inner() {
+    let b = 2;
+    function innermost() {
+      let c = 3;
+      console.log(a, b, c);   // 1 2 3
+    }
+    innermost();
+    console.log(a, b);        // 1 2 — 'c' is not defined
+  }
+  inner();
+  console.log(a);             // 1 — 'b' and 'c' are not defined
+}
+outer();
+```
+
+You may think of Scopes as a series of doors decreasing in size (from biggest to smallest). A short person that fits through the smallest door — innermost scope — also fits through any bigger doors — outer scopes.
