@@ -298,3 +298,9 @@ All of these three methods are used to attach this into function and the differe
 .apply() invokes the function immediately and allows you to pass in arguments as an array.
 
 .call() and .apply() are mostly equivalent and are used to borrow a method from an object. Choosing which one to use depends on which one is easier to pass the arguments in. Just decide whether it’s easier to pass in an array or a comma separated list of arguments.
+
+.bind() returns a new function, with a certain context and parameters. It is usually used when you want a function to be called later with a certain context.
+
+That is possible thanks to its ability to maintain a given context for calling the original function. This is useful for asynchronous callbacks and events.
+
+.bind() works like the call function. It requires you to pass in the arguments one by one separated by a comma.
