@@ -312,3 +312,7 @@ Understanding the keyword this in JavaScript, and what it is referring to, can b
 The value of this is usually determined by a functions execution context. Execution context simply means how a function is called.
 
 The keyword this acts as a placeholder, and will refer to whichever object called that method when the method is actually used.
+
+.bind() works a little bit differently. It creates a new function that will call the original one with the object that was bound to it.
+
+### Strict Mode
