@@ -327,3 +327,5 @@ Some of its benefits are:
 * Prevents duplicate property names or parameter values — Duplicated named property in an object or argument in a function will now throw an error. (This is no longer the case in ES6)
 * Makes eval() safer — Variables and functions declared inside an eval() statement are not created in the surrounding scope.
 * “Secures” JavaScript eliminating this coercion — Referencing a this value of null or undefined is not coerced to the global object. This means that in browsers it’s no longer possible to reference the window object using this inside a function.
+
+### Event Loop
