@@ -304,3 +304,11 @@ All of these three methods are used to attach this into function and the differe
 That is possible thanks to its ability to maintain a given context for calling the original function. This is useful for asynchronous callbacks and events.
 
 .bind() works like the call function. It requires you to pass in the arguments one by one separated by a comma.
+
+### 'this' keyword
+
+Understanding the keyword this in JavaScript, and what it is referring to, can be quite complicated at times.
+
+The value of this is usually determined by a functions execution context. Execution context simply means how a function is called.
+
+The keyword this acts as a placeholder, and will refer to whichever object called that method when the method is actually used.
