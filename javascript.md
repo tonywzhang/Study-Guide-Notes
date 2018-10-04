@@ -328,4 +328,10 @@ Some of its benefits are:
 * Makes eval() safer — Variables and functions declared inside an eval() statement are not created in the surrounding scope.
 * “Secures” JavaScript eliminating this coercion — Referencing a this value of null or undefined is not coerced to the global object. This means that in browsers it’s no longer possible to reference the window object using this inside a function.
 
-### Event Loop
+### Event Loop Lecture Notes
+
+The heap is where memory allocation happens.
+
+The call stack is where the stack frames.
+
+However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty. 
