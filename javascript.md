@@ -330,8 +330,12 @@ Some of its benefits are:
 
 ### Event Loop Lecture Notes
 
+JavaScript is a single threaded programming language.
+
 The heap is where memory allocation happens.
 
 The call stack is where the stack frames.
 
-However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty. 
+However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
+
+We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
