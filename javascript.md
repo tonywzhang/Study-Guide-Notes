@@ -407,6 +407,8 @@ console.log(myCar.hasOwnProperty('airbags'))  // false — Inherited
 console.log(myCar.hasOwnProperty('color'))    // true
 ```
 
+Object.create(obj) — Creates a new object with the specified prototype object and properties.
+
 ### Event Loop Lecture Notes
 
 JavaScript is a single threaded programming language. It can only run one thing at a time.
