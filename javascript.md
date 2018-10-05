@@ -328,9 +328,24 @@ Some of its benefits are:
 * Makes eval() safer — Variables and functions declared inside an eval() statement are not created in the surrounding scope.
 * “Secures” JavaScript eliminating this coercion — Referencing a this value of null or undefined is not coerced to the global object. This means that in browsers it’s no longer possible to reference the window object using this inside a function.
 
+### Prototype and Inheritance
+
+Prototype is one of the most confusing concepts in JavaScript and one of the reason for that is because there are two different contexts in which the word prototype is used.
+
+Prototype relationship
+Each object has a prototype object, from which it inherits all of its prototype’s properties.
+__proto__ is a non-standard mechanism (available in ES6) for retrieving the prototype of an object. It points to the object’s “parent” — the object’s prototype.
+
+All normal objects also inherit a .constructor property that points to the constructor of the object. Whenever an object is created from a constructor function, the __proto__ property links that object to the .prototype property of the constructor function used to create it.
+
+Object.getPrototypeOf()is the standard ES5 function for retrieving the prototype of an object.
+
+
 ### Event Loop Lecture Notes
 
-JavaScript is a single threaded programming language.
+JavaScript is a single threaded programming language. It can only run one thing at a time.
+
+The call stack is a data structure that records where in the program we are.
 
 The heap is where memory allocation happens.
 
