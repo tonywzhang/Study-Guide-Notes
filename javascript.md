@@ -409,6 +409,33 @@ console.log(myCar.hasOwnProperty('color'))    // true
 
 Object.create(obj) — Creates a new object with the specified prototype object and properties.
 
+```
+var dog = { legs: 4 };
+var myDog = Object.create(dog);
+
+console.log(myDog.hasOwnProperty('legs'))  // false
+console.log(myDog.legs)                    // 4
+console.log(myDog.__proto__ === dog)       // true
+```
+
+#### Inheritance by Reference
+
+An inherited property is a copy by reference of the prototype object’s property from which it inherited that property.
+
+If an object’s property is mutated on the prototype, objects which inherited that property will share the same mutation. But if the property is replaced, the change will not be shared.
+
+```
+var objProt = { text: 'original' };
+var objAttachedToProt = Object.create(objProt);
+console.log(objAttachedToProt.text)   // original
+
+objProt.text = 'prototype property changed';
+console.log(objAttachedToProt.text)   // prototype property changed
+
+objProt = { text: 'replacing property' };
+console.log(objAttachedToProt.text)   // prototype property changed
+```
+
 ### Event Loop Lecture Notes
 
 JavaScript is a single threaded programming language. It can only run one thing at a time.
