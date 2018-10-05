@@ -436,6 +436,19 @@ objProt = { text: 'replacing property' };
 console.log(objAttachedToProt.text)   // prototype property changed
 ```
 
+#### Classical Inheritance vs. Prototypal Inheritance
+
+In classical inheritance, objects inherit from classes — like a blueprint or a description of the object to be created — and create sub-class relationships. These objects are created via constructor functions using the new keyword.
+
+The downside of classical inheritance is that it causes:
+inflexible hierarchy
+tight coupling problems
+fragile base class problems
+duplication problems
+And the so famous gorilla/banana problem — “What you wanted was a banana, what you got was a gorilla holding the banana, and the entire jungle.”
+
+In prototypal inheritance, objects inherit directly from other objects. Objects are typically created via Object.create(), object literals or factory functions.
+
 ### Event Loop Lecture Notes
 
 JavaScript is a single threaded programming language. It can only run one thing at a time.
