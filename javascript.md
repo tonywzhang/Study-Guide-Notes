@@ -373,6 +373,10 @@ console.log(rusty.constructor)  // ƒ Dog(breed, name) { ... }
 
 The prototype chain is a series of links between objects that reference one another.
 
+When looking for a property in an object, JavaScript engine will first try to access that property on the object itself.
+
+If it is not found, the JavaScript engine will look for that property on the object it inherited its properties from — the object’s prototype.
+
 ### Event Loop Lecture Notes
 
 JavaScript is a single threaded programming language. It can only run one thing at a time.
