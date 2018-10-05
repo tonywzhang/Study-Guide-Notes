@@ -383,6 +383,30 @@ The last object in the chain is the built-in Object.prototype, which has null as
 
 #### Own vs Inherited Properties
 
+Objects have own properties and inherited properties.
+
+Own properties are properties that were defined on the object.
+
+Inherited properties were inherited through prototype chain.
+
+```
+function Car() { }
+Car.prototype.wheels = 4;
+Car.prototype.airbags = 1;
+
+var myCar = new Car();
+myCar.color = 'black';
+
+/*  Check for Property including Prototype Chain:  */
+console.log('airbags' in myCar)  // true
+console.log(myCar.wheels)        // 4
+console.log(myCar.year)          // undefined
+
+/*  Check for Own Property:  */
+console.log(myCar.hasOwnProperty('airbags'))  // false — Inherited
+console.log(myCar.hasOwnProperty('color'))    // true
+```
+
 ### Event Loop Lecture Notes
 
 JavaScript is a single threaded programming language. It can only run one thing at a time.
