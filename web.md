@@ -43,3 +43,9 @@ The Domain Name System is one of the most important and over-looked parts of the
 Without it, the internet as we know it would collapse.
 
 So many services we get from the internet that we take for granted would not be available to us as we know it.
+
+When you type www.example.com, additional non-viewable characters are added to the end of that domain string entry, and the DNS looks up that domain name for a matching IP address in it's record books.
+
+But before that even takes place, the browser and operating system will first check their respective cache's to make sure they don't already have local knowledge of what that domain name holds.
+
+If they both do not know, the operating system asks a name server for IP addresses it does not know. The operating system queries the name server for the domain name. If it still can't find the root domain name within the name service, we move on to the next step. 
