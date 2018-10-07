@@ -35,3 +35,5 @@ DNS makes it easier to understand URLs, rather than having URLs strictly be thei
 7. The server sends out an HTTP response.
 
 8. The browser displays the HTML content (for HTML responses which is the most common).
+
+#### How does DNS Work?
