@@ -48,4 +48,12 @@ When you type www.example.com, additional non-viewable characters are added to t
 
 But before that even takes place, the browser and operating system will first check their respective cache's to make sure they don't already have local knowledge of what that domain name holds.
 
-If they both do not know, the operating system asks a name server for IP addresses it does not know. The operating system queries the name server for the domain name. If it still can't find the root domain name within the name service, we move on to the next step. 
+If they both do not know, the operating system asks a name server for IP addresses it does not know. The operating system queries the name server for the domain name. If it still can't find the root domain name within the name service, we move on to the next step.
+
+The operating system will then be directed to the Top Level Domain name servers, TLD name servers for short.
+
+If this also fails, we will be directed to the authoritative name servers. When a website is purchased, the registrar is told which authoritative name servers that domain should use.
+
+When it finally is successfully found, the reply is given to the operating system to give to the browser with the correct IP address.
+
+There are many steps included in this process, but it was designed to be extremely fast and efficient.
