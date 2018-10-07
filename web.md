@@ -37,3 +37,9 @@ DNS makes it easier to understand URLs, rather than having URLs strictly be thei
 8. The browser displays the HTML content (for HTML responses which is the most common).
 
 #### How does DNS Work?
+
+The Domain Name System is one of the most important and over-looked parts of the internet.
+
+Without it, the internet as we know it would collapse.
+
+So many services we get from the internet that we take for granted would not be available to us as we know it.
