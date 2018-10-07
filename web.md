@@ -57,3 +57,5 @@ If this also fails, we will be directed to the authoritative name servers. When 
 When it finally is successfully found, the reply is given to the operating system to give to the browser with the correct IP address.
 
 There are many steps included in this process, but it was designed to be extremely fast and efficient.
+
+If anyone were to change any part or filter any part of the DNS process, the internet would crash and be doomed.

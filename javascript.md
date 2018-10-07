@@ -457,7 +457,7 @@ The call stack is a data structure that records where in the program we are.
 
 The heap is where memory allocation happens.
 
-The call stack is where the stack frames.
+The call stack is where the stack frames live.
 
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
