@@ -459,6 +459,12 @@ The heap is where memory allocation happens.
 
 The call stack is where the stack frames live.
 
+Stack overflow is where there are too many stacks in the call stack, and it has reached past the stack bound.
+
+Blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes. This happens because the event loop is unable to continue running JavaScript while a blocking operation is occurring.
+
+All of the I/O methods in the Node.js standard library provide asynchronous versions, which are non-blocking, and accept callback functions. Some methods also have blocking counterparts, which have names that end with Sync.
+
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
 We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
