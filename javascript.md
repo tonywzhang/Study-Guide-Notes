@@ -469,6 +469,8 @@ The event loop's job is to loop at the call stack and loop at the task queue.
 
 If the stack is empty, it takes the first thing on the queue and pushes it onto the stack, effectively running it.
 
+Any runtime commands will be run immediately, and any call back commands will be thrown into the task queue temporarily. When all of the runtime commands have completed running, only then will the callback commands be pushed onto the call stack to be executed.
+
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
 We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
