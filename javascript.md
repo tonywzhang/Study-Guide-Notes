@@ -471,6 +471,8 @@ If the stack is empty, it takes the first thing on the queue and pushes it onto 
 
 Any runtime commands will be run immediately, and any call back commands will be thrown into the task queue temporarily. When all of the runtime commands have completed running, only then will the callback commands be pushed onto the call stack to be executed.
 
+Even though logically, it may seem like a command with a setTimeout timer of 0 milliseconds should run in constant time, the event loop actually pushes the event to the beginning of the task queue to only run after all of the real time events have concluded.
+
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
 We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
