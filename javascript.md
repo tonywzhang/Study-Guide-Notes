@@ -465,6 +465,10 @@ Blocking is when the execution of additional JavaScript in the Node.js process m
 
 All of the I/O methods in the Node.js standard library provide asynchronous versions, which are non-blocking, and accept callback functions. Some methods also have blocking counterparts, which have names that end with Sync.
 
+The event loop's job is to loop at the call stack and loop at the task queue.
+
+If the stack is empty, it takes the first thing on the queue and pushes it onto the stack, effectively running it.
+
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
 We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
