@@ -479,4 +479,31 @@ We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
 
 #### What is Event Delegation?
 
-If you add an event listener to a DOM element, all nested children DOM elements also gain that same event listener through Event Bubbling.
+If you add an event listener to a DOM element, all nested children DOM elements also gain that same event listener through inheritance.
+
+#### What is Event Bubbling?
+
+The opposite of Event Delegation, also known as propagation. If a child DOM element's events will also bubble up and fire on all it's parents.
+
+#### What is the difference between target and currentTarget?
+
+The latter is the element with the listener attached, the former is the element that actually triggered it.
+
+#### What is an IIFE?
+
+An IIFE is an immediately invoked function expression.
+
+```
+// the following example would error out
+function foo(){
+
+}();
+
+//this however is more acceptable
+var foo = function(){
+  // this is an expression
+  //resolves to a value, even if just 'undefined'
+};
+```
+
+An expression is any valid unit of code that resolves to a value.
