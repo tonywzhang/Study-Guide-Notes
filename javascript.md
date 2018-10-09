@@ -531,3 +531,17 @@ console.log(foo);
 Null is a value. Its value is null. It has a "nothing" value.
 
 It's value is not zero, not an empty string, object, or array. It is inherently falsy.
+
+#### How do you check for these states?
+
+Undeclared usually lets you know it is undeclared, except when assigning a value.
+
+Checking for undefined also kind of sucks, you can use typeof, but it will return undefined as a string ("undefined").
+
+=== is preferred to check if something is undefined.
+
+typeof null will return an object, which is a bug
+
+=== can also be used to check if something is null.
+
+### == vs ===
