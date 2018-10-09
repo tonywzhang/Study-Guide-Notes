@@ -59,3 +59,17 @@ When it finally is successfully found, the reply is given to the operating syste
 There are many steps included in this process, but it was designed to be extremely fast and efficient.
 
 If anyone were to change any part or filter any part of the DNS process, the internet would crash and be doomed.
+
+### HTTP Methods
+
+#### GET
+
+The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+#### POST
+
+A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+#### DELETE
+
+Removes all current representations of the target resource given by a URI.
