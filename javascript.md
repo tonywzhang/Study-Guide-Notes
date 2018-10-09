@@ -516,3 +516,18 @@ An expression is any valid unit of code that resolves to a value.
 The use case of an IIFE would be to control variable scope.
 
 The variables used in an IIFE are not available outside of the function expression itself.
+
+#### Null/Undeclared/Undefined
+
+Undeclared: You forgot to declare it somewhere before you referenced it.
+
+Undefined: It has been declared, but not assigned a value.
+```
+var foo;
+
+console.log(foo);
+```
+
+Null is a value. Its value is null. It has a "nothing" value.
+
+It's value is not zero, not an empty string, object, or array. It is inherently falsy.
