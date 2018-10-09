@@ -476,3 +476,7 @@ Even though logically, it may seem like a command with a setTimeout timer of 0 m
 However, if you clone the V8 code base, and search all files using grep for setTimeout, DOM, or HTTP Request, those searches return empty.
 
 We have our Web APIs, web services that hold the DOM, time out, AJAX, etc.
+
+#### What is Event Delegation?
+
+If you add an event listener to a DOM element, all nested children DOM elements also gain that same event listener through Event Bubbling.
