@@ -504,6 +504,15 @@ var foo = function(){
   // this is an expression
   //resolves to a value, even if just 'undefined'
 };
+
+
+//if you want to run it in one line, put parentheses around an expression like so:
+
+(function foo(){})();
 ```
 
 An expression is any valid unit of code that resolves to a value.
+
+The use case of an IIFE would be to control variable scope.
+
+The variables used in an IIFE are not available outside of the function expression itself.
