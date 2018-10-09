@@ -29,3 +29,17 @@ For example, if we have a tree with N nodes, we must have N-1 number of edges. W
 This representation is considered an adjacency matrix representation.
 
 If there are edges for each vertex towards every other vertex in the tree, it would expect there to be an estimated n^2 number of edges. An adjacency matrix would be a huge waste of space assuming n is an exceedingly large number.
+
+## Recursion
+
+### What is Recursion?
+
+The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function.
+
+### What is base condition in recursion?
+
+In recursive program, the solution to base case is provided and solution of bigger problem is expressed in terms of smaller problems.
+
+### When does Stack Overflow occur in recursion?
+
+If the base case is not reached or not defined, then stack overflow problem may arise.
