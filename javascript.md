@@ -543,3 +543,5 @@ Checking for undefined also kind of sucks, you can use typeof, but it will retur
 typeof null will return an object, which is a bug
 
 === can also be used to check if something is null.
+
+#### Asynchronous JavaScript
