@@ -561,3 +561,28 @@ The solution to executing heavy pieces of code without blocking anything is asyn
 The asynchronous process begins with an asynchronous callback functions placed into a Heap or region of memory. You can think of the Heap as an Event Manager.
 
 The Call Stack asks the Event Manager to execute a specific function only when a certain event happens. Once that event happens, the Event Manager moves the function to the Callback Queue. Note: When the Event Manager handles a function, the code after that is not blocked and JavaScript continues its execution.
+
+The Event Loop handles the execution of multiple pieces of your code over time. The Event Loop monitors the Call Stack and the Callback Queue.
+
+The Call Stack is constantly checked whether it is empty or not. When it is empty, the Callback Queue is checked if there is a function waiting to be invoked. When there is a function waiting, the first function in the queue is pushed into the Call Stack, which will run it. This checking process is called a ‘tick’ in the Event Loop.
+
+```
+const first = function () {
+  console.log('First message')
+}
+const second = function () {
+  console.log('Second message')
+}
+const third = function() {
+  console.log('Third message')
+}
+
+first();
+setTimeout(second, 0);
+third();
+
+// Output:
+  // First message
+  // Third message
+  // Second message
+```
