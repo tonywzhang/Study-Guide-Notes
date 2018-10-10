@@ -545,3 +545,19 @@ typeof null will return an object, which is a bug
 === can also be used to check if something is null.
 
 #### Asynchronous JavaScript
+
+JavaScript is a single-threaded programming language. This means that the JavaScript engine can only process a piece of code at a time.
+
+One of its main consequences is that when JavaScript encounters a piece of code that takes a long time to process, it will block all code after that from running.
+
+JavaScript uses a data structure that stores information about active functions named Call Stack.
+
+A Call Stack is like a pile of books. Every book that goes into that pile sits on top of the previous book.
+
+The last book to go into the pile will be the first one removed from it, and the first book added to the pile will be the last one removed.
+
+The solution to executing heavy pieces of code without blocking anything is asynchronous callback functions. These functions are executed later — asynchronously.
+
+The asynchronous process begins with an asynchronous callback functions placed into a Heap or region of memory. You can think of the Heap as an Event Manager.
+
+The Call Stack asks the Event Manager to execute a specific function only when a certain event happens. Once that event happens, the Event Manager moves the function to the Callback Queue. Note: When the Event Manager handles a function, the code after that is not blocked and JavaScript continues its execution.
