@@ -590,3 +590,17 @@ third();
 Note: The second() function is not executed after 0ms. The time you pass in to setTimeout function does not relate to the delay of its execution. The Event Manager will wait the given time before moving that function into the Callback Queue. Its execution will only take place on a future ‘tick’ in the Event Loop.
 
 #### Event Bubbling/Capturing
+
+Bubbling
+
+The bubbling principle is simple.
+
+When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+
+Stopping bubbling
+
+A bubbling event goes from the target element straight up. Normally it goes upwards till <html>, and then to document object, and some events even reach window, calling all handlers on the path.
+
+But any handler may decide that the event has been fully processed and stop the bubbling.
+
+The method for it is event.stopPropagation().
