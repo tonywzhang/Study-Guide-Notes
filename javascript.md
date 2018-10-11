@@ -604,3 +604,13 @@ A bubbling event goes from the target element straight up. Normally it goes upwa
 But any handler may decide that the event has been fully processed and stop the bubbling.
 
 The method for it is event.stopPropagation().
+
+Capturing
+
+There’s another phase of event processing called “capturing”. It is rarely used in real code, but sometimes can be useful.
+
+The standard DOM Events describes 3 phases of event propagation:
+
+Capturing phase – the event goes down to the element.
+Target phase – the event reached the target element.
+Bubbling phase – the event bubbles up from the element.
