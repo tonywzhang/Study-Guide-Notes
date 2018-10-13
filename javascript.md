@@ -620,3 +620,7 @@ Bubbling phase – the event bubbles up from the element.
 Block Scope
 
 ES5 only had “function-level scope” (i.e. you wrap code in functions to create scope) and caused a lot of issues. ES6 provides “block”-level scoping(i.e curly-braces to scope) when we use “let” or “const” instead of “var”.
+
+Prevent Duplicate Variable Declaration
+
+ES6 doesn’t allow duplicate declaration of variables when we declare them using “let” or “const” in the same scope. This is very helpful in avoiding duplicate function expressions coming from different libraries (like the “add” function expression below).
