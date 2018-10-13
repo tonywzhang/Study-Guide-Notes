@@ -615,6 +615,15 @@ Capturing phase – the event goes down to the element.
 Target phase – the event reached the target element.
 Bubbling phase – the event bubbles up from the element.
 
+#### Event Delegation
+
+Capturing and bubbling allow us to implement one of most powerful event handling patterns called event delegation.
+
+The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+
+In the handler we get event.target, see where the event actually happened and handle it.
+
+
 #### ES6 Changes
 
 Block Scope
@@ -624,3 +633,7 @@ ES5 only had “function-level scope” (i.e. you wrap code in functions to crea
 Prevent Duplicate Variable Declaration
 
 ES6 doesn’t allow duplicate declaration of variables when we declare them using “let” or “const” in the same scope. This is very helpful in avoiding duplicate function expressions coming from different libraries (like the “add” function expression below).
+
+babel — A Tool to convert ES6 to ES5
+
+Babel is the most popular tool used to convert ES6 to ES5
