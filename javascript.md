@@ -614,3 +614,9 @@ The standard DOM Events describes 3 phases of event propagation:
 Capturing phase – the event goes down to the element.
 Target phase – the event reached the target element.
 Bubbling phase – the event bubbles up from the element.
+
+#### ES6 Changes
+
+Block Scope
+
+ES5 only had “function-level scope” (i.e. you wrap code in functions to create scope) and caused a lot of issues. ES6 provides “block”-level scoping(i.e curly-braces to scope) when we use “let” or “const” instead of “var”.
