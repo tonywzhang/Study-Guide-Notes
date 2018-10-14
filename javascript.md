@@ -637,3 +637,7 @@ ES6 doesn’t allow duplicate declaration of variables when we declare them usin
 babel — A Tool to convert ES6 to ES5
 
 Babel is the most popular tool used to convert ES6 to ES5
+
+Makes It Trivial To Use Functions In Loops
+
+In ES5, if you had a function inside a loop (like for(var i = 0; i < 3; i++) {…}), and if that function tried to access the looping variable “i”, we’d be in trouble because of hoisting. In ES6, if you use “let”, you can use functions without any issue.
