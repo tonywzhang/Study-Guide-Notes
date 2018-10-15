@@ -641,3 +641,7 @@ Babel is the most popular tool used to convert ES6 to ES5
 Makes It Trivial To Use Functions In Loops
 
 In ES5, if you had a function inside a loop (like for(var i = 0; i < 3; i++) {…}), and if that function tried to access the looping variable “i”, we’d be in trouble because of hoisting. In ES6, if you use “let”, you can use functions without any issue.
+
+Strict Mode
+
+Strict Mode(“use strict”) helps identify common issues (or “bad” parts) and also helps with “securing” JavaScript. In ES5, the Strict Mode is optional but in ES6, it’s needed for many ES6 features. So most people and tools like babel automatically add “use strict” at the top of the file putting the whole JS code in strict mode and forcing us to write better JavaScript.
