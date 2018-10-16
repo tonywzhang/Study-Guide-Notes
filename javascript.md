@@ -716,3 +716,17 @@ The document.readyState property gives us information about it. There are 3 poss
 * "loading" – the document is loading.
 * "interactive" – the document was fully read.
 * "complete" – the document was fully read and all resources (like images) are loaded too.
+
+So we can check document.readyState and setup a handler or execute the code immediately if it’s ready.
+
+Like this:
+
+```
+function work() { /*...*/ }
+
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', work);
+} else {
+  work();
+}
+```
