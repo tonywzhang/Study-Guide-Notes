@@ -649,3 +649,21 @@ Strict Mode(“use strict”) helps identify common issues (or “bad” parts) 
 ### WebPage LifeCycle
 
 #### DOMContentLoaded, load, beforeunload, unload
+
+The lifecycle of an HTML page has three important events:
+
+* DOMContentLoaded – the browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.
+* load – the browser loaded all resources (images, styles etc).
+* beforeunload/unload – when the user is leaving the page.
+
+#### DOMContentLoaded
+
+DOMContentLoaded event happens on the document object.
+
+To listen for this event we have to use "addEventListener":
+
+```
+document.addEventListener("DOMContentLoaded", ready);
+```
+
+At the first sight DOMContentLoaded event is very simple. The DOM tree is ready – here’s the event. But there are few peculiarities.
