@@ -667,3 +667,11 @@ document.addEventListener("DOMContentLoaded", ready);
 ```
 
 At the first sight DOMContentLoaded event is very simple. The DOM tree is ready – here’s the event. But there are few peculiarities.
+
+#### DOMContentLoaded and scripts
+
+When the browser initially loads HTML and comes across a <script>...</script> in the text, it can’t continue building DOM. It must execute the script right now. So DOMContentLoaded may only happen after all such scripts are executed.
+
+External scripts (with src) also put DOM building to pause while the script is loading and executing. So DOMContentLoaded waits for external scripts as well.
+
+The only exception are external scripts with async and defer attributes. They tell the browser to continue processing without waiting for the scripts. This lets the user see the page before scripts finish loading, which is good for performance.
