@@ -675,3 +675,21 @@ When the browser initially loads HTML and comes across a <script>...</script> in
 External scripts (with src) also put DOM building to pause while the script is loading and executing. So DOMContentLoaded waits for external scripts as well.
 
 The only exception are external scripts with async and defer attributes. They tell the browser to continue processing without waiting for the scripts. This lets the user see the page before scripts finish loading, which is good for performance.
+
+#### DOMContentLoaded and styles
+
+External style sheets don’t affect DOM, and so DOMContentLoaded does not wait for them.
+
+But there’s a pitfall: if we have a script after the style, then that script must wait for the stylesheet to execute:
+
+```
+<link type="text/css" rel="stylesheet" href="style.css">
+<script>
+  // the script doesn't not execute until the stylesheet is loaded
+  alert(getComputedStyle(document.body).marginTop);
+</script>
+```
+
+The reason is that the script may want to get coordinates and other style-dependent properties of elements, like in the example above. Naturally, it has to wait for styles to load.
+
+As DOMContentLoaded waits for scripts, it now waits for styles before them as well.
