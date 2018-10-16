@@ -764,7 +764,16 @@ Events can be anything from basic user interactions (such as clicks, or keydowns
 | beforeunload  | The window, the document and its resources are about to be unloaded.  |
 | unload  | The document or a dependent resource is being unloaded.  |
 
+#### Network Events
 
 | Event Name  | Fired When  |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| online  | The browser has gained access to the network.  |
+| offline  | The browser has lost access to the network.  |
+
+#### Focus Events
+
+| Event Name  | Fired When  |
+| ------------- | ------------- |
+| focus  | An element has received focus (does not bubble).  |
+| blur  | An element has lost focus (does not bubble).  |
