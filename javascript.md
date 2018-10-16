@@ -693,3 +693,13 @@ But there’s a pitfall: if we have a script after the style, then that script m
 The reason is that the script may want to get coordinates and other style-dependent properties of elements, like in the example above. Naturally, it has to wait for styles to load.
 
 As DOMContentLoaded waits for scripts, it now waits for styles before them as well.
+
+#### Built-in browser autofill
+
+Firefox, Chrome and Opera autofill forms on DOMContentLoaded.
+
+For instance, if the page has a form with login and password, and the browser remembered the values, then on DOMContentLoaded it may try to autofill them (if approved by the user).
+
+So if DOMContentLoaded is postponed by long-loading scripts, then autofill also awaits. You probably saw that on some sites (if you use browser autofill) – the login/password fields don’t get autofilled immediately, but there’s a delay till the page fully loads. That’s actually the delay until the DOMContentLoaded event.
+
+One of minor benefits in using async and defer for external scripts – they don’t block DOMContentLoaded and don’t delay browser autofill.
