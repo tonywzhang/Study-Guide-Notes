@@ -645,3 +645,7 @@ In ES5, if you had a function inside a loop (like for(var i = 0; i < 3; i++) {�
 Strict Mode
 
 Strict Mode(“use strict”) helps identify common issues (or “bad” parts) and also helps with “securing” JavaScript. In ES5, the Strict Mode is optional but in ES6, it’s needed for many ES6 features. So most people and tools like babel automatically add “use strict” at the top of the file putting the whole JS code in strict mode and forcing us to write better JavaScript.
+
+### WebPage LifeCycle
+
+#### DOMContentLoaded, load, beforeunload, unload
