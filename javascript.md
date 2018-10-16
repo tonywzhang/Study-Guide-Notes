@@ -746,3 +746,25 @@ unload event on window triggers when the user is finally leaving, in the handler
 * loading – the document is loading.
 * interactive – the document is parsed, happens at about the same time as DOMContentLoaded, but before it.
 * complete – the document and resources are loaded, happens at about the same time as window.onload, but before it.
+
+#### DOM Events
+
+DOM events are set to notify whenever any such event takes place.
+
+Events can be anything from basic user interactions (such as clicks, or keydowns) to automated notifications of things happening in the rendering model.
+
+#### Most Common Events
+
+| Event Name  | Fired When |
+| ------------- | ------------- |
+| Cached  | The resources listed in the manifest have been downloaded, and the application is now cached.  |
+| Error  | A resource failed to load.  |
+| Abort  | The loading of a resource has been aborted.  |
+| Load  | A resource and its dependent resources have finished loading.  |
+| beforeunload  | The window, the document and its resources are about to be unloaded.  |
+| unload  | The document or a dependent resource is being unloaded.  |
+
+
+| Event Name  | Fired When  |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
