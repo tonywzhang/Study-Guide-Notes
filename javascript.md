@@ -702,4 +702,17 @@ For instance, if the page has a form with login and password, and the browser re
 
 So if DOMContentLoaded is postponed by long-loading scripts, then autofill also awaits. You probably saw that on some sites (if you use browser autofill) – the login/password fields don’t get autofilled immediately, but there’s a delay till the page fully loads. That’s actually the delay until the DOMContentLoaded event.
 
-One of minor benefits in using async and defer for external scripts – they don’t block DOMContentLoaded and don’t delay browser autofill.
+One of minor benefits in using async and defer for external scripts – they don’t block DOMContentLoaded and don’t delay browser autofill
+
+#### readyState
+What happens if we set the DOMContentLoaded handler after the document is loaded?
+
+Naturally, it never runs.
+
+There are cases when we are not sure whether the document is ready or not, for instance an external script with async attribute loads and runs asynchronously. Depending on the network, it may load and execute before the document is complete or after that, we can’t be sure. So we should be able to know the current state of the document.
+
+The document.readyState property gives us information about it. There are 3 possible values:
+
+* "loading" – the document is loading.
+* "interactive" – the document was fully read.
+* "complete" – the document was fully read and all resources (like images) are loaded too.
