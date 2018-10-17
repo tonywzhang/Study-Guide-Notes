@@ -43,3 +43,7 @@ In recursive program, the solution to base case is provided and solution of bigg
 ### When does Stack Overflow occur in recursion?
 
 If the base case is not reached or not defined, then stack overflow problem may arise.
+
+### What is a Heap?
+
+A Heap is nothing more than binary tree with some additional rules it has to follow.
