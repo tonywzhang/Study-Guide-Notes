@@ -47,3 +47,5 @@ If the base case is not reached or not defined, then stack overflow problem may 
 ### What is a Heap?
 
 A Heap is nothing more than binary tree with some additional rules it has to follow.
+
+A heap sort algorithm is a sorting technique that leans on binary heap data structures. Because we know that heaps must always follow a specific order, we can leverage that property and use that to find the largest, maximum value element, and sequentially sort elements by selecting the root node of a heap, and adding it to the end of the array.
