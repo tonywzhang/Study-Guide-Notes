@@ -17,3 +17,7 @@ The remaining rows after the WHERE constraints are applied are then grouped base
 #### HAVING
 
 If the query has a GROUP BY clause, then the constraints in the HAVING clause are then applied to the grouped rows, discard the grouped rows that don't satisfy the constraint. Like the WHERE clause, aliases are also not accessible from this step in most databases.
+
+#### SELECT
+
+Any expressions in the SELECT part of the query are finally computed.
