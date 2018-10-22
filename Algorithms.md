@@ -52,6 +52,8 @@ A heap sort algorithm is a sorting technique that leans on binary heap data stru
 
 ### What is Bubble Sort?
 
+Bubble sort has many of the same properties as insertion sort, but has slightly higher overhead. In the case of nearly sorted data, bubble sort takes O(n) time, but requires at least 2 passes through the data (whereas insertion sort requires something more like 1 pass).
+
 ```
 for i = 1:n,
     swapped = false
@@ -63,3 +65,8 @@ for i = 1:n,
     break if not swapped
 end
 ```
+
+* Stable
+* O(1) extra space
+* O(n2) comparisons and swaps
+* Adaptive: O(n) when nearly sorted
