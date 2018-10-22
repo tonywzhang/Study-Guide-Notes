@@ -87,3 +87,13 @@ AJAX just uses a combination of:
   * JavaScript and HTML DOM (to display or use the data)
 
 AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+### System Design
+
+#### Scaling Up Horizontally vs. Vertically
+
+What is the difference between horizontally and vertically scaling these databases?
+
+Horizontal scaling means that you scale by adding more machines into your pool of resources whereas Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+An easy way to remember this is to think of a machine on a server rack, we add more machines across the horizontal direction and add more resources to a machine in the vertical direction.
