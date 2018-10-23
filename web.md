@@ -97,3 +97,13 @@ What is the difference between horizontally and vertically scaling these databas
 Horizontal scaling means that you scale by adding more machines into your pool of resources whereas Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
 
 An easy way to remember this is to think of a machine on a server rack, we add more machines across the horizontal direction and add more resources to a machine in the vertical direction.
+
+In a database world horizontal-scaling is often based on the partitioning of the data i.e. each node contains only part of the data, in vertical-scaling the data resides on a single node and scaling is done through multi-core i.e. spreading the load between the CPU and RAM resources of that machine.
+
+Horizontal scalability is the ability to increase capacity by connecting multiple hardware or software entities so that they work as a single logical unit.
+
+An important advantage of horizontal scalability is that it can provide administrators with the ability to increase capacity on the fly. Another advantage is that in theory, horizontal scalability is only limited by how many entities can be connected successfully. The distributed storage system Cassandra, for example, runs on top of hundreds of commodity nodes spread across different data centers. Because the commodity hardware is scaled out horizontally, Cassandra is fault tolerant and does not have a single point of failure (SPoF).
+
+Vertical scalability, on the other hand, increases capacity by adding more resources, such as more memory or an additional CPU, to a machine. Scaling vertically, which is also called scaling up, usually requires downtime while new resources are being added and has limits that are defined by hardware. When Amazon RDS customers need to scale vertically, for example, they can switch from a smaller to a bigger machine, but Amazon's largest RDS instance has only 68 GB of memory.
+
+Scaling horizontally has both advantages and disadvantages. For example, adding inexpensive commodity computers to a cluster might seem to be a cost-effective solution at first glance, but it's important for the administrator to know whether the licensing costs for those additional servers, the additional operations cost of powering and cooling and the large footprint they will occupy in the data center truly makes scaling horizontally a better choice than scaling vertically.
