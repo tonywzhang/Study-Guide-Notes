@@ -116,3 +116,9 @@ A binary numbering system consists of two digits: one and zero. A switch in the 
 ```
 Binding is the process of assigning a value to an attribute. When a value is assigned to an attribute, it is said to be bound to the value. As an example, when defining a variable int i = 5, the value of the integer variable i is bound to 5.
 ```
+
+##### What is the difference between early and late binding?
+
+```
+Early binding is the binding done statically by the compiler - it is realized by method overloading. Late binding is done dynamically at run-time and it is realized through inheritance and polymorphism.
+```
