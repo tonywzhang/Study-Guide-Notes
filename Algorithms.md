@@ -104,3 +104,9 @@ Abstraction can be thought of as a mechanism for suppressing irrelevant details 
 ```
 Encapsulation is the mechanism of enforcing information hiding. Objects encapsulate data and the procedures for manipulating that data, thus the object hides the details of the implementation from the user of the object.
 ```
+
+##### What is a binary numbering system?
+
+```
+A binary numbering system consists of two digits: one and zero. A switch in the off state represents zero and a switch in the on state represents one. This means that one transistor can represent one of two digits.
+```
