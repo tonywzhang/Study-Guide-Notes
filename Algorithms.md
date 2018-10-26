@@ -76,3 +76,5 @@ end
 #### Data Structures
 
 * What is a Data Structure?
+
+A Data Structure is a way to store and organize data in order to facilitate access and modifications. (Let's go into more depth)
