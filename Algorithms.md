@@ -75,16 +75,28 @@ end
 
 #### Data Structures
 
-* What is a Data Structure?
+##### What is a Data Structure?
 
+```
 A Data Structure is a way to store and organize data in order to facilitate access and modifications. (Let's go into more depth)
+```
 
-* Rank Data Structures in order of importance
+##### Rank Data Structures in order of importance
 
+```
 Data Structures can be organized into several main categories:
 
-* Data Types(primitive, composite, abstract data types)
-* Linear Data Structures (arrays, lists)
-* Trees
-* Hashes
-* Graphs
+Data Types(primitive, composite, abstract data types)
+Linear Data Structures (arrays, lists)
+Trees
+Hashes
+Graphs
+```
+
+##### Define the abstraction mechanism. What are it's benefits?
+
+```
+Abstraction can be thought of as a mechanism for suppressing irrelevant details while at the same time emphasizing relevant ones. An important benefit of abstraction is that it makes it easier for the programmer to think about the problem to be solved.
+```
+
+#####
