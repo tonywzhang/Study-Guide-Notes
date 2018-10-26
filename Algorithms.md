@@ -110,3 +110,9 @@ Encapsulation is the mechanism of enforcing information hiding. Objects encapsul
 ```
 A binary numbering system consists of two digits: one and zero. A switch in the off state represents zero and a switch in the on state represents one. This means that one transistor can represent one of two digits.
 ```
+
+##### What is the binding process?
+
+```
+Binding is the process of assigning a value to an attribute. When a value is assigned to an attribute, it is said to be bound to the value. As an example, when defining a variable int i = 5, the value of the integer variable i is bound to 5.
+```
