@@ -99,4 +99,8 @@ Graphs
 Abstraction can be thought of as a mechanism for suppressing irrelevant details while at the same time emphasizing relevant ones. An important benefit of abstraction is that it makes it easier for the programmer to think about the problem to be solved.
 ```
 
-#####
+##### What is encapsulation?
+
+```
+Encapsulation is the mechanism of enforcing information hiding. Objects encapsulate data and the procedures for manipulating that data, thus the object hides the details of the implementation from the user of the object.
+```
