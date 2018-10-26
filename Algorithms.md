@@ -78,3 +78,13 @@ end
 * What is a Data Structure?
 
 A Data Structure is a way to store and organize data in order to facilitate access and modifications. (Let's go into more depth)
+
+* Rank Data Structures in order of importance
+
+Data Structures can be organized into several main categories:
+
+* Data Types(primitive, composite, abstract data types)
+* Linear Data Structures (arrays, lists)
+* Trees
+* Hashes
+* Graphs
