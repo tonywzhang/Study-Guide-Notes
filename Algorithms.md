@@ -122,3 +122,12 @@ Binding is the process of assigning a value to an attribute. When a value is ass
 ```
 Early binding is the binding done statically by the compiler - it is realized by method overloading. Late binding is done dynamically at run-time and it is realized through inheritance and polymorphism.
 ```
+
+##### Which are the main primitive data types?
+
+```
+Integer - stores whole numbers and signed numbers
+Floating Point - store real numbers (fractional values)
+Character - stores characters (names of things)
+Boolean - stores a true or false value
+```
