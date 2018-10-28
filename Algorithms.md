@@ -135,9 +135,9 @@ Boolean - stores a true or false value
 #### What are the five standard algorithm approaches?
 
 ```
-Examplify:
-Pattern Matching:
-Simplify & Generalize:
-Base Case & Build:
-Data Structure Brainstorm: 
+Examplify: Write out specific examples of the problem
+Pattern Matching: Consider what problems the algorithm is similar to
+Simplify & Generalize: Change a constraint to simplify the question. Once you have a general solution for the problem, expand it for the actual question.
+Base Case & Build: Solve the algorithm for a base case, and then expand upon that with more complex cases.
+Data Structure Brainstorm: Run through all Data Structures and see which one works best
 ```
