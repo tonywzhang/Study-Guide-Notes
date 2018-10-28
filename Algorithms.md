@@ -131,3 +131,13 @@ Floating Point - store real numbers (fractional values)
 Character - stores characters (names of things)
 Boolean - stores a true or false value
 ```
+
+#### What are the five standard algorithm approaches?
+
+```
+Examplify:
+Pattern Matching:
+Simplify & Generalize:
+Base Case & Build:
+Data Structure Brainstorm: 
+```
