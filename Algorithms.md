@@ -143,3 +143,61 @@ Data Structure Brainstorm: Run through all Data Structures and see which one wor
 ```
 
 #### Linked Lists
+
+A linked list is a data structure that consists of a collection of nodes that represent a sequence. Each element in a linked list will contain a datum and a reference to the next element in the linked list (a pointer).
+
+In Ruby it makes most sense to use arrays due to built-in methods such as shift, unshift, enq, deq, push and pop, but it is helpful to know why linked lists can be beneficial.
+
+Linked lists’ biggest advantage over arrays in other languages is their ability to insert / remove list elements without reallocating or reorganization of the entire data structure. Arrays have indices, so deleting a value at index 0 for example requires every single item to be reindexed.
+
+The flip-side of this, however, is that performing operations requiring access to particular elements of a linked list can be cumbersome. For example, finding the last element of a linked list requires scanning every element of the list.
+
+```
+class Node
+  attr_accessor :val, :next
+
+  def initialize(val, next_node)
+      @val = val
+      @next = next_node
+  end
+end
+
+class LinkedList
+
+  def initialize(val)
+    @head = Node.new(val, nil)
+  end
+
+  def add(val)
+    current = @head
+    while current.next != nil
+      current = current.next
+    end
+    current.next = Node.new(val, nil)
+  end
+
+  def delete(val)
+    current.next = @head
+    if current.val = val
+      @head = current.next
+    else
+      while (current.next != nil) && (current.next.val != val)
+        current = current.next
+      end
+      unless current.next == nil
+        current.next = current.next.next
+      end
+    end
+  end
+
+  def return_list
+    elements = []
+    current = @head
+    while current.next != nil
+      elements << current
+      current = current.next
+    end
+    elements << current
+  end
+end
+```
