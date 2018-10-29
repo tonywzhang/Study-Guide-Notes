@@ -141,3 +141,5 @@ Simplify & Generalize: Change a constraint to simplify the question. Once you ha
 Base Case & Build: Solve the algorithm for a base case, and then expand upon that with more complex cases.
 Data Structure Brainstorm: Run through all Data Structures and see which one works best
 ```
+
+#### Linked Lists
