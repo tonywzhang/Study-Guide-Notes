@@ -29,3 +29,15 @@ In another study, the relationship between load times and conversion rates showe
 
 Consider that Google once experienced a 20% drop in traffic because of an extra .5 seconds in load time.
 ```
+
+#### What is a good load time?
+
+```
+Before you start working on your site’s speed, it’s a good idea to set a goal for where you want it to be.
+
+That can be difficult if you aren’t sure what an acceptable page speed is.
+
+According to Google, best practice is three seconds. Unfortunately, according to its recent benchmark report findings, most sites are nowhere near that.
+
+In an analysis of 900,000 mobile ad landing pages spanning 126 countries, Google found that 70% of the pages analyzed took nearly seven seconds for the visual content above the fold to display.
+```
