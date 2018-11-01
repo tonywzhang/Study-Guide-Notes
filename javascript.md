@@ -793,3 +793,19 @@ let promise = new Promise(function(resolve, reject) {
   // executor (the producing code, "singer")
 });
 ```
+
+The function passed to new Promise is called the executor. When the promise is created, this executor function runs automatically. It contains the producing code, that should eventually produce a result. In terms of the analogy above: the executor is the “singer”.
+
+
+The resulting promise object has internal properties:
+
+* state — initially “pending”, then changes to either “fulfilled” or “rejected”,
+* result — an arbitrary value of your choosing, initially undefined.
+When the executor finishes the job, it should call one of the functions that it gets as arguments:
+
+* resolve(value) — to indicate that the job finished successfully:
+  * sets state to "fulfilled",
+  * sets result to value.
+* reject(error) — to indicate that an error occurred:
+  * sets state to "rejected",
+  * sets result to error.
