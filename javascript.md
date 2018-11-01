@@ -809,3 +809,14 @@ When the executor finishes the job, it should call one of the functions that it 
 * reject(error) — to indicate that an error occurred:
   * sets state to "rejected",
   * sets result to error.
+
+Here’s an example of a Promise constructor and a simple executor function with its “producing code” (the setTimeout):
+
+```
+let promise = new Promise(function(resolve, reject) {
+  // the function is executed automatically when the promise is constructed
+
+  // after 1 second signal that the job is done with the result "done!"
+  setTimeout(() => resolve("done!"), 1000);
+});
+```
