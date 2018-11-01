@@ -777,3 +777,19 @@ Events can be anything from basic user interactions (such as clicks, or keydowns
 | ------------- | ------------- |
 | focus  | An element has received focus (does not bubble).  |
 | blur  | An element has lost focus (does not bubble).  |
+
+
+#### Promises
+
+* A “producing code” that does something and takes time. For instance, the code loads a remote script. That’s a “singer”.
+* A “consuming code” that wants the result of the “producing code” once it’s ready. Many functions may need that result. These are the “fans”.
+* A promise is a special JavaScript object that links the “producing code” and the “consuming code” together. In terms of our analogy: this is the “subscription list”. The “producing code” takes whatever time it needs to produce the promised result, and the “promise” makes that result available to all of the subscribed code when it’s ready.
+
+
+The constructor syntax for a promise object is:
+
+```
+let promise = new Promise(function(resolve, reject) {
+  // executor (the producing code, "singer")
+});
+```
