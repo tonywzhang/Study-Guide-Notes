@@ -19,3 +19,7 @@ JS - Interactivity
 Inline elements adhere to the natural breakdown of elements in the HTML Page.
 Inline block elements are similar to inline elements, but can adjust width and height
 Block elements start on a new line and usually take up the full width of the web page.
+
+# Pseudo Tags
+
+Can be used to display changes in state to render different changes on the HTML page
