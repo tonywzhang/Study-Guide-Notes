@@ -22,4 +22,4 @@ Block elements start on a new line and usually take up the full width of the web
 
 # Pseudo Tags
 
-Can be used to display changes in state to render different changes on the HTML page
+Can be used to display changes in state to render different changes on the HTML page.
