@@ -240,3 +240,9 @@ Input: two n-digit numbers x and y
 Output: the product x*y
 
 Primitive Operation: Add or Multiply 2 single digit numbers
+
+If done properly, this will always yield the correct answer. In essence, this is it's own algorithm.
+
+#### The Algorithm Designer's Mantra
+
+"Perhaps the most important principle for the good algorithm designer is to refuse to be content" - Aho, Hopcroft, and Ullman
