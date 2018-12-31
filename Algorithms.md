@@ -4,7 +4,7 @@
 
 An Algorithm is a set of well defined rules, recipe, to solve some computational problem. ex: Want to sort a set of numbers.
 
-
+Understanding Data Structures is essential in any branch of Computer Science.
 
 ## Graphs Notes
 
