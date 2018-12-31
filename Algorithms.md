@@ -1,5 +1,11 @@
 # Algorithm Notes
 
+## What is an Algorithm?
+
+An Algorithm is a set of well defined rules, recipe, to solve some computational problem. ex: Want to sort a set of numbers.
+
+
+
 ## Graphs Notes
 
 A graph is similar to a tree, in that it is a collection of objects or entities that we call nodes or vertices connected to each other through a set of edges. In a tree, there are restrictions on the way nodes/vertices are connected.
