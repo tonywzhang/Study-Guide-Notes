@@ -6,6 +6,8 @@ An Algorithm is a set of well defined rules, recipe, to solve some computational
 
 Understanding Data Structures is essential in any branch of Computer Science.
 
+Plays a key role in modern technological innovation.
+
 ## Graphs Notes
 
 A graph is similar to a tree, in that it is a collection of objects or entities that we call nodes or vertices connected to each other through a set of edges. In a tree, there are restrictions on the way nodes/vertices are connected.
