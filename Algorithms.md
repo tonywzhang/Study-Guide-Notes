@@ -232,3 +232,11 @@ Else If x is greater than the mid element, then x can only lie in right half sub
 Else (x is smaller) recur for the left half.
 
 ```
+
+#### Integer Multiplication
+
+Input: two n-digit numbers x and y
+
+Output: the product x*y
+
+Primitive Operation: Add or Multiply 2 single digit numbers
