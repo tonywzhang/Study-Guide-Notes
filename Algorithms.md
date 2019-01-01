@@ -251,4 +251,8 @@ If done properly, this will always yield the correct answer. In essence, this is
 
 1) Worst Case Analysis: Our upperbound of our run time is the run time we will use to evaluate our algorithms. It is the worst possible run time for any input for our function, even if someone deviously tried to produce an output absolutely worst suited for our algorithm. Best for general subroutines, where you have no prior knowledge as to how the input is coming in.
 
-2)
+2) The algorithm will not pay attention to constant factors, lower-order terms. It is way easier to approach algorithms in this manner.
+
+3) Asymptotic Analysis: Focus on running time for large input sizes.
+
+For example: Running time of merge sort is better than any quadratic dependency that is true if N is large enough. Is that a justified assumption? Absolutely, because if N were small, any method works and it does not make THAT much of a difference which method you use to fix your algorithm.
