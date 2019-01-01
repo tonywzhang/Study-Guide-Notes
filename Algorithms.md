@@ -256,3 +256,9 @@ If done properly, this will always yield the correct answer. In essence, this is
 3) Asymptotic Analysis: Focus on running time for large input sizes.
 
 For example: Running time of merge sort is better than any quadratic dependency that is true if N is large enough. Is that a justified assumption? Absolutely, because if N were small, any method works and it does not make THAT much of a difference which method you use to fix your algorithm.
+
+#### What is a Fast Algorithm?
+
+An Algorithm that adopts the above 3 Guidelines. The worst-case running time grows slowly with an ever increasing input size.
+
+The holy grail of run time is constant time. Approximately O(1).
