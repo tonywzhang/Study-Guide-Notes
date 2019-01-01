@@ -246,3 +246,9 @@ If done properly, this will always yield the correct answer. In essence, this is
 #### The Algorithm Designer's Mantra
 
 "Perhaps the most important principle for the good algorithm designer is to refuse to be content" - Aho, Hopcroft, and Ullman
+
+#### Guidelines for Designing Algorithms
+
+1) Worst Case Analysis: Our upperbound of our run time is the run time we will use to evaluate our algorithms. It is the worst possible run time for any input for our function, even if someone deviously tried to produce an output absolutely worst suited for our algorithm. Best for general subroutines, where you have no prior knowledge as to how the input is coming in.
+
+2)
