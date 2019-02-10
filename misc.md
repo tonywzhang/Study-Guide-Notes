@@ -41,3 +41,6 @@ According to Google, best practice is three seconds. Unfortunately, according to
 
 In an analysis of 900,000 mobile ad landing pages spanning 126 countries, Google found that 70% of the pages analyzed took nearly seven seconds for the visual content above the fold to display.
 ```
+
+
+#### Bits vs Bytes
