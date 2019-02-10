@@ -44,3 +44,16 @@ In an analysis of 900,000 mobile ad landing pages spanning 126 countries, Google
 
 
 #### Bits vs Bytes
+
+```
+Bits and Bytes are the units used to measure computer data.
+
+A Bit is like an on/off switch in that it can be either a 0 or 1. Binary.
+
+A character on the keyboard may be represented as 8 of these combined bits, 0s and 1s, to generate a computer recognizable combination called a Byte.
+
+ISP provides 100 megabits per second.
+
+File sizes more measured in Bytes.
+
+```
