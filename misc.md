@@ -56,4 +56,15 @@ ISP provides 100 megabits per second.
 
 File sizes more measured in Bytes.
 
+There are 8 bits in a Byte.
+
+Two hexidecimal digits represent a Byte.
+
+The largest unsigned 32-bit binary integer in computing is 2,147,483,647. (2^31 -1).
+The largest signed 32-bit binary integer in computing is 2,147,483,647. (2^31 -1).
+The smallest signed 32-bit binary integer in computing is -2,147,483,647. (2^31).
+The smallest unsigned 32-bit binary integer in computing is -2,147,483,647. (2^31).
+
+
+
 ```
